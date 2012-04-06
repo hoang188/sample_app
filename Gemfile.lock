@@ -31,6 +31,7 @@ GEM
     annotate (2.4.1.beta1)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     bootstrap-sass (2.0.0)
     builder (3.0.0)
     capybara (1.1.2)
@@ -68,7 +69,9 @@ GEM
     mime-types (1.18)
     multi_json (1.2.0)
     nokogiri (1.5.2)
+    nokogiri (1.5.2-x86-mingw32)
     pg (0.13.2)
+    pg (0.13.2-x86-mingw32)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -137,6 +140,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   annotate (~> 2.4.1.beta)
