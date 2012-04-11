@@ -8,8 +8,9 @@ development:
   encoding: unicode
   database: sample_development
   pool: 5
-  username: postgres
-  password: 1q2w3e4r
+  username: hoang
+  #password: 1q2w3e4r
+  password: 1
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
@@ -20,8 +21,9 @@ test:
   encoding: unicode
   database: sample_test
   pool: 5
-  username: postgres
-  password: 1q2w3e4r
+  username: hoang
+  #password: 1q2w3e4r
+  password: 1
   timeout: 5000
 
 production:
