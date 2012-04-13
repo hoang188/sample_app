@@ -25,6 +25,7 @@ test:
   # username: postgres
   # password: 1q2w3e4r
   username: hoang
+  password: 1
   timeout: 5000
 
 production:
