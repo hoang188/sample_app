@@ -13,31 +13,12 @@
 
 ActiveRecord::Schema.define(:version => 20120412064953) do
 
-  create_table "categories", :force => true do |t|
-    t.string   "name"
-    t.integer  "priority"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "pictures", :force => true do |t|
     t.string   "pic_url"
     t.string   "pic_des"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-
-  create_table "products", :force => true do |t|
-    t.string   "code"
-    t.string   "name"
-    t.text     "description"
-    t.float    "price"
-    t.integer  "category_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  add_index "products", ["category_id"], :name => "index_products_on_category_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"
