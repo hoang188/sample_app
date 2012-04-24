@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  get "categories/index"
+
+  get "categories/new"
+
+  get "categories/create"
+
   # get "users/new"
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
