@@ -1,11 +1,9 @@
 SampleApp::Application.routes.draw do
-  get "categories/index"
-
-  get "categories/new"
-
-  get "categories/create"
+  mount Ckeditor::Engine => '/ckeditor'
 
   # get "users/new"
+  resources :articles
+  resources :categories
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts, only: [:create, :destroy]
@@ -20,6 +18,15 @@ SampleApp::Application.routes.draw do
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
   
+  #categories
+  match '/categories/create', to: 'categories#create'
+  match '/categories/new', to: 'categories#new'
+  match '/categories', to: 'categories#index'
+  
+  # Article
+  match '/articles/create', to: 'articles#create'
+  match '/articles/new', to: 'articles#new'
+  match '/articles', to: 'articles#index'
   #get "static_pages/help"
 
   # The priority is based upon order of creation:

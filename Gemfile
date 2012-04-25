@@ -7,7 +7,8 @@ gem 'heroku'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.5'
-
+gem 'ckeditor', :git => 'git://github.com/galetahub/ckeditor.git'
+gem 'paperclip'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
