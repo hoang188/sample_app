@@ -3,7 +3,7 @@ class CreateArticles < ActiveRecord::Migration
     create_table :articles do |t|
       t.integer :category_id
       t.string :title
-      t.string :description
+      t.text :description
       t.text :content
       t.string :source
       t.boolean :publish
