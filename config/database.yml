@@ -4,14 +4,14 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
   database: sample_development
   pool: 5
   # username: postgres
   # password: 1q2w3e4r
-  username: hoang
-  password: 1
+  # username: hoang
+  # password: 1
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
@@ -24,8 +24,8 @@ test:
   pool: 5
   # username: postgres
   # password: 1q2w3e4r
-  username: hoang
-  password: 1
+  # username: hoang
+  # password: 1
   timeout: 5000
 
 production:
