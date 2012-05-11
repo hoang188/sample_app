@@ -19,7 +19,8 @@ class ArticlesController < ApplicationController
       end
       
     else
-      render 'new'
+      format.hrml {render 'new'}
+      format.json {render :json => {'success' => false}}
     end
   end
 
