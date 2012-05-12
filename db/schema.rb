@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20120425232521) do
   create_table "articles", :force => true do |t|
     t.integer  "category_id"
     t.string   "title"
-    t.string   "description"
+    t.text     "description"
     t.text     "content"
     t.string   "source"
     t.boolean  "publish"

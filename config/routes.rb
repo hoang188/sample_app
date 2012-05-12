@@ -1,6 +1,5 @@
 SampleApp::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-
   # get "users/new"
   resources :articles
   resources :categories
